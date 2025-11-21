@@ -1,3 +1,4 @@
+"use client";
 import { selectFilters } from "@/store/features/filtersSlice";
 import { useRouter } from "next/navigation";
 import qs from "qs";
