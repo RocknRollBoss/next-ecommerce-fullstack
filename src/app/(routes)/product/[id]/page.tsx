@@ -9,13 +9,17 @@ import {
   Title,
 } from "@/components";
 
-export default async function ProductPage({
-  params: { id },
-}: {
-  params: { id: string };
-}) {
+interface ProductPageProps {
+  params: {
+    id: string;
+  };
+}
+
+export default async function ProductPage({ params }: ProductPageProps) {
+  const id = Number(params.id);
+
   const product = await prisma.product.findUnique({
-    where: { id: Number(id) },
+    where: { id },
   });
 
   if (!product) {
