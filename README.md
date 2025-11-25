@@ -10,57 +10,59 @@ Authentication uses **JWT** (login, register, getMe). Products are stored in a S
 
 ### 🛍️ Store Functionality
 
-* Live **search with dropdown previews**
-* **Category filtering** (electronics, books, clothing, etc.)
-* **Sorting** options:
+- Live **search with dropdown previews**
+- **Category filtering** (electronics, books, clothing, etc.)
+- **Sorting** options:
 
-  * Rating ↑ / ↓
-  * Price ↑ / ↓
-* **Favorites** (available for all users)
-* **Cart** (available only for authenticated users)
-* Product cards with:
+  - Rating ↑ / ↓
+  - Price ↑ / ↓
 
-  * image
-  * title
-  * price & discount price
-  * rating
-  * favorite toggle
-  * add-to-cart
-* Product detail page with extended data and cart/favorite buttons
+- **Favorites** (available for all users)
+- **Cart** (available only for authenticated users)
+- Product cards with:
+
+  - image
+  - title
+  - price & discount price
+  - rating
+  - favorite toggle
+  - add-to-cart
+
+- Product detail page with extended data and cart/favorite buttons
 
 ### 🔐 Authentication
 
-* **JWT-based auth**
-* Endpoints:
+- **JWT-based auth**
+- Endpoints:
 
-  * Register
-  * Login
-  * getMe
+  - Register
+  - Login
+  - getMe
 
 ### 🗄️ Database / Backend
 
-* **SQLite** used as database
-* **Prisma ORM** for models and migrations
-* Products loaded via **seed script**
+- **SQLite** used as database
+- **Prisma ORM** for models and migrations
+- Products loaded via **seed script**
 
 ### 🎨 UI / Frontend
 
-* **TailwindCSS** styling
-* **shadcn/ui** components
-* Responsive layout
-* Dropdowns, modals, and dynamic UI interactions
+- **TailwindCSS** styling
+- **shadcn/ui** components
+- Responsive layout
+- Dropdowns, modals, and dynamic UI interactions
 
 ---
 
 ## 🧩 Stack
 
-* **Next.js (App Router)**
-* **TypeScript**
-* **Redux Toolkit + RTK Query**
-* **Prisma ORM**
-* **SQLite**
-* **TailwindCSS**
-* **shadcn/ui**
+- **Next.js (App Router)**
+- **TypeScript**
+- **Redux Toolkit + RTK Query**
+- **Prisma ORM**
+- **SQLite**
+- **TailwindCSS**
+- **shadcn/ui**
 
 ---
 
@@ -117,23 +119,25 @@ The project is deployed on Render:https://next-ecommerce-fullstack.onrender.com/
 
 ### Search Dropdown
 
-![](/mnt/data/search-dropdown.png)
+![Search Dropdown](/public/screenshots/search-dropdown.png)
 
 ### Home Page with Sorting
 
-![](/mnt/data/home-sorting.png)
+![Home Sorting](/public/screenshots/home-sorting.png)
 
-### User Menu / Profile Dropdown
+### Profile Dropdown
 
-![](/mnt/data/profile-dropdown.png)
+![Profile Dropdown](/public/screenshots/search-dropdown.png)
 
-### Product Grid View
+### Product Grid
 
-![](/mnt/data/product-grid.png)
+![Product Grid](/public/screenshots/cart.png)
 
 ### Login Modal
 
-![](/mnt/data/login-modal.png)
+![Login Modal](/public/screenshots/auth.png)
+### Product
+![Product](/public/screenshots/product.png)
 
 ---
 
