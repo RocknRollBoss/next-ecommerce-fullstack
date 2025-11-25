@@ -129,7 +129,7 @@ The project is deployed on Render:https://next-ecommerce-fullstack.onrender.com/
 
 ![Profile Dropdown](/public/screenshots/search-dropdown.png)
 
-### Product Grid
+### Cart
 
 ![Product Grid](/public/screenshots/cart.png)
 
