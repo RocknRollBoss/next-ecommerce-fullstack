@@ -1,36 +1,144 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next Ecommerce Fullstack
 
-## Getting Started
+A complete full-stack e-commerce application built with **Next.js (App Router)**, **TypeScript**, **RTK Query**, **Prisma**, **SQLite**, **TailwindCSS**, and **shadcn/ui**.
 
-First, run the development server:
+Authentication uses **JWT** (login, register, getMe). Products are stored in a SQLite database and preloaded with a **seed script**.
+
+---
+
+## 🚀 Features
+
+### 🛍️ Store Functionality
+
+* Live **search with dropdown previews**
+* **Category filtering** (electronics, books, clothing, etc.)
+* **Sorting** options:
+
+  * Rating ↑ / ↓
+  * Price ↑ / ↓
+* **Favorites** (available for all users)
+* **Cart** (available only for authenticated users)
+* Product cards with:
+
+  * image
+  * title
+  * price & discount price
+  * rating
+  * favorite toggle
+  * add-to-cart
+* Product detail page with extended data and cart/favorite buttons
+
+### 🔐 Authentication
+
+* **JWT-based auth**
+* Endpoints:
+
+  * Register
+  * Login
+  * getMe
+
+### 🗄️ Database / Backend
+
+* **SQLite** used as database
+* **Prisma ORM** for models and migrations
+* Products loaded via **seed script**
+
+### 🎨 UI / Frontend
+
+* **TailwindCSS** styling
+* **shadcn/ui** components
+* Responsive layout
+* Dropdowns, modals, and dynamic UI interactions
+
+---
+
+## 🧩 Stack
+
+* **Next.js (App Router)**
+* **TypeScript**
+* **Redux Toolkit + RTK Query**
+* **Prisma ORM**
+* **SQLite**
+* **TailwindCSS**
+* **shadcn/ui**
+
+---
+
+## 📁 Project Structure
+
+```
+app/
+components/
+prisma/
+hooks/
+lib/
+store/
+utils/
+```
+
+---
+
+## ▶️ Running the Project
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Prisma setup:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npx prisma migrate dev
+npx prisma generate
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Seed DB:
 
-## Learn More
+```bash
+npm run seed
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌍 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project is deployed on Render:https://next-ecommerce-fullstack.onrender.com/.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Search Dropdown
+
+![](/mnt/data/search-dropdown.png)
+
+### Home Page with Sorting
+
+![](/mnt/data/home-sorting.png)
+
+### User Menu / Profile Dropdown
+
+![](/mnt/data/profile-dropdown.png)
+
+### Product Grid View
+
+![](/mnt/data/product-grid.png)
+
+### Login Modal
+
+![](/mnt/data/login-modal.png)
+
+---
+
+## 📜 License
+
+MIT
+
+---
